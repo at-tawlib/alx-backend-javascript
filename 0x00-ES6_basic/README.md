@@ -114,7 +114,7 @@ bob@dylan:~$ npm run dev 5-main.js
 ]
 bob@dylan:~$
 ```
-### 6. Take advantage of template literals
+## 6. Take advantage of template literals
 **Files:** [6-string-interpolation.js](6-string-interpolation.js) , [6-main.js](6-main.js)
 ```
 bob@dylan:~$
@@ -123,7 +123,7 @@ As of 2017, it was the seventh-highest income county in the United States, with 
 bob@dylan:~$
 ```
 
-## Object property value shorthand syntax
+## 7. Object property value shorthand syntax
 **Files:** [7-getBudgetObject.js](7-getBudgetObject.js) , [7-main.js](7-main.js)
 ```
 bob@dylan:~$
@@ -131,7 +131,7 @@ bob@dylan:~$ npm run dev 7-main.js
 { income: 400, gdp: 700, capita: 900 }
 bob@dylan:~$
 ```
-## No need to create empty objects before adding in properties (Creating objects)
+## 8. No need to create empty objects before adding in properties (Creating objects)
 **Files:** [8-getBudgetCurrentYear.js](8-getBudgetCurrentYear.js) , [8-main.js](8-main.js)
 ```
 bob@dylan:~$
@@ -140,7 +140,7 @@ bob@dylan:~$ npm run dev 8-main.js
 bob@dylan:~$
 ```
 
-## ES6 method properties
+## 9. ES6 method properties
 **Files:** [9-getFullBudget.js](9-getFullBudget.js) , [9-main.js](9-main.js)
 ```
 bob@dylan:~$
@@ -149,7 +149,7 @@ $20
 20 euros
 bob@dylan:~$
 ```
-## For...of Loops
+## 10. For...of Loops
 **Files:** [10-loops.js](10-loops.js) , [10-main.js](10-main.js)
 ```
 bob@dylan:~$
@@ -157,7 +157,7 @@ bob@dylan:~$ npm run dev 10-main.js
 [ 'correctly-appended', 'correctly-fixed', 'correctly-displayed' ]
 bob@dylan:~$
 ```
-## Iterator (...)
+## 11. Iterator (...)
 **Files:** [11-createEmployeesObject.js](11-createEmployeesObject.js) , [11-main.js](11-main.js)
 ```
 bob@dylan:~$
@@ -166,7 +166,7 @@ bob@dylan:~$ npm run dev 11-main.js
 bob@dylan:~$
 ```
 
-## Let's create a report object
+## 12. Let's create a report object
 **Files:** [12-createReportObject.js](12-createReportObject.js) , [12-main.js](12-main.js)
 ```
 bob@dylan:~$
@@ -176,7 +176,7 @@ bob@dylan:~$ npm run dev 12-main.js
 bob@dylan:~$
 ```
 
-## Iterating through report objects
+## 13. Iterating through report objects
 **Files:** [100-createIteratorObject.js](100-createIteratorObject.js) , [100-main.js](100-main.js)
 
 Write a function named  `createIteratorObject`, that will take into argument a report Object created with the previous function  `createReportObject`.
@@ -189,7 +189,7 @@ Jane
 Sylvie
 bob@dylan:~$
 ```
-## Iterate through object
+## 14. Iterate through object
 **Files:**  [101-iterateThroughObject.js](101-iterateThroughObject.js) , [101-main.js](101-main.js)
 Finally, write a function named  `iterateThroughObject`. The function’s parameter  `reportWithIterator`  is the return value from  `createIteratorObject`.
 It should return every employee name in a string, separated by  `|`
