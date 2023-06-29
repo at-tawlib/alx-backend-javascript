@@ -175,3 +175,41 @@ bob@dylan:~$ npm run dev 12-main.js
 2
 bob@dylan:~$
 ```
+
+## Iterating through report objects
+**Files:** [100-createIteratorObject.js](100-createIteratorObject.js) , [100-main.js](100-main.js)
+
+Write a function named  `createIteratorObject`, that will take into argument a report Object created with the previous function  `createReportObject`.
+This function will return an iterator to go through every employee in every department.
+```
+bob@dylan:~$
+bob@dylan:~$ npm run dev 100-main.js 
+Bob
+Jane
+Sylvie
+bob@dylan:~$
+```
+## Iterate through object
+**Files:**  [101-iterateThroughObject.js](101-iterateThroughObject.js) , [101-main.js](101-main.js)
+Finally, write a function named  `iterateThroughObject`. The function’s parameter  `reportWithIterator`  is the return value from  `createIteratorObject`.
+It should return every employee name in a string, separated by  `|`
+```
+> employees = {
+      ...createEmployeesObject('engineering', engineering),
+      ...createEmployeesObject('design', design),
+    };
+>
+> const report = createReportObject(employees);
+> const reportWithIterator = createIteratorObject(report);
+> iterateThroughObject(reportWithIterator)
+'John Doe | Guillaume Salva | Kanye East | Jay Li'
+> 
+```
+
+```
+bob@dylan:~$
+bob@dylan:~$ npm run dev 101-main.js 
+Bob | Jane | Sylvie
+bob@dylan:~$
+```
+> Written with [StackEdit](https://stackedit.io/).
