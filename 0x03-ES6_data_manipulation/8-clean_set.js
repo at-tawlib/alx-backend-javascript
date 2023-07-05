@@ -4,7 +4,17 @@ export default function cleanSet(set, startString) {
   }
 
   const array = [...set];
-  const filterText = array.filter((element) => element.startsWith(startString));
-  const text = filterText.map((element) => element.slice(startString.length));
+  const filterText = array.filter((element) => {
+    if (element !== undefined) {
+      return element.startsWith(startString);
+    }
+    return '';
+  });
+  const text = filterText.map((element) => {
+    if (element !== undefined) {
+      return element.slice(startString.length);
+    }
+    return '';
+  });
   return text.join('-');
 }
