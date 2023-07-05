@@ -247,6 +247,7 @@ Map {
 bob@dylan:~$ 
 ```
 ### 11. Weak link data structure
+Files:  [100-weak.js](100-weak.js), [100-main.js](100-main.js)
 Export a  `const`  instance of  `WeakMap`  and name it  `weakMap`.
 
 Export a new function named  `queryAPI`. It should accept an endpoint argument like so:
@@ -273,7 +274,5 @@ bob@dylan:~$ npm run dev 100-main.js
    ...
 bob@dylan:~$ 
 ```
-
-Files:  [100-weak.js](100-weak.js), [100-main.js](100-main.js)
 
 > Written with [StackEdit](https://stackedit.io/).
