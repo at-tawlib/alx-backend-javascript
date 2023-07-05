@@ -133,3 +133,117 @@ bob@dylan:~$ npm run dev 4-main.js
 ]
 bob@dylan:~$ 
 ```
+### 5. Typed Arrays
+Files:  [5-typed_arrays.js](5-typed_arrays.js), [5-main.js](5-main.js)
+Create a function named  `createInt8TypedArray`  that returns a new  `ArrayBuffer`  with an  `Int8`  value at a specific position.
+It should accept three arguments:  `length`  (Number),  `position`  (Number), and  `value`  (Number).
+If adding the value is not possible the error  `Position outside range`  should be thrown.
+
+```
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 5-main.js 
+DataView {
+  byteLength: 10,
+  byteOffset: 0,
+  buffer: ArrayBuffer {
+    [Uint8Contents]: <00 00 59 00 00 00 00 00 00 00>,
+    byteLength: 10
+  }
+}
+bob@dylan:~$ 
+```
+
+### 6. Set data structure
+File:  [6-set.js](6-set.js), [6-main.js](6-main.js)
+Create a function named  `setFromArray`  that returns a  `Set`  from an array.
+
+It accepts an argument (Array, of any kind of element).
+```
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 6-main.js 
+Set { 12, 32, 15, 78, 98 }
+bob@dylan:~$ 
+```
+
+### 7. More set data structure
+File:  [7-has_array_values.js](7-has_array_values.js), [7-main.js](7-main.js)
+Create a function named  `hasValuesFromArray`  that returns a boolean if all the elements in the array exist within the set.
+It accepts two arguments: a  `set`  (Set) and an  `array`  (Array).
+```
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 7-main.js 
+true
+false
+false
+bob@dylan:~$ 
+```
+
+### 8. Clean set (set, filter, map, array)
+File:  [8-clean_set.js](8-clean_set.js), [8-main.js](8-main.js)
+Create a function named  `cleanSet`  that returns a string of all the set values that start with a specific string (`startString`).
+
+It accepts two arguments: a  `set`  (Set) and a  `startString`  (String).
+
+When a value starts with  `startString`  you only append the rest of the string. The string contains all the values of the set separated by  `-`.
+
+```
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 8-main.js 
+jovi-aparte-appetit
+
+bob@dylan:~$ 
+```
+
+### 9. Map data structure
+File:  [9-groceries_list.js](9-groceries_list.js), [9-main.js](9-main.js)
+Create a function named  `groceriesList`  that returns a map of groceries with the following items (name, quantity):
+
+```
+Apples, 10
+Tomatoes, 10
+Pasta, 1
+Rice, 1
+Banana, 5
+```
+Result:
+```
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 9-main.js 
+Map {
+  'Apples' => 10,
+  'Tomatoes' => 10,
+  'Pasta' => 1,
+  'Rice' => 1,
+  'Banana' => 5
+}
+bob@dylan:~$ 
+```
+
+### 10. More map data structure
+Files:  [10-update_uniq_items.js](10-update_uniq_items.js), [10-main.js](10-main.js)
+Create a function named  `updateUniqueItems`  that returns an updated map for all items with initial quantity at 1.
+
+It should accept a map as an argument. The map it accepts for argument is similar to the map you create in the previous task.
+
+For each entry of the map where the quantity is 1, update the quantity to 100. If updating the quantity is not possible (argument is not a map) the error  `Cannot process`  should be thrown.
+
+```
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 10-main.js 
+Map {
+  'Apples' => 10,
+  'Tomatoes' => 10,
+  'Pasta' => 1,
+  'Rice' => 1,
+  'Banana' => 5
+}
+Map {
+  'Apples' => 10,
+  'Tomatoes' => 10,
+  'Pasta' => 100,
+  'Rice' => 100,
+  'Banana' => 5
+}
+bob@dylan:~$ 
+```
+> Written with [StackEdit](https://stackedit.io/).
