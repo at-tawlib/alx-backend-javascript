@@ -1,11 +1,11 @@
 // Teacher interface
 interface Teacher {
-    readonly firstName: string;
-    readonly lastName: string;
-    fullTimeEmployee: boolean;
-    yearsOfExperience?: number;
-    location: string;
-    [propName: string]: any;
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+  [propName: string]: any;
 }
 
 interface Directors extends Teacher{
@@ -13,31 +13,52 @@ interface Directors extends Teacher{
 }
 
 const teacher3: Teacher = {
-    firstName: 'John',
-    fullTimeEmployee: false,
-    lastName: 'Doe',
-    location: 'London',
-    contract: false,
-  };
-  
-  console.log(teacher3);
+  firstName: 'John',
+  fullTimeEmployee: false,
+  lastName: 'Doe',
+  location: 'London',
+  contract: false,
+};
 
-  const director1: Directors = {
-    firstName: 'John',
-    lastName: 'Doe',
-    location: 'London',
-    fullTimeEmployee: true,
-    numberOfReports: 17,
-  };
-  console.log(director1);
+console.log(teacher3);
 
-  // print teacher function
-  function printTeacher(firsName: string, lastName: string): string {
-    return(`${firsName.charAt(0).toUpperCase()} . ${lastName.charAt(0).toUpperCase}${lastName.slice()}`);
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+console.log(director1);
+
+// print teacher function
+function printTeacher(firsName: string, lastName: string): string {
+  return(`${firsName.charAt(0).toUpperCase()} . ${lastName.charAt(0).toUpperCase}${lastName.slice()}`);
+}
+
+interface printTeacherFunction {
+  (firsName: string, lastName: string): string;
+}
+
+interface StudentConstructor {
+  new (firstName: string, lastName: string) : StudentFunctions;
+}
+
+interface StudentFunctions{
+  workOnHomeWork(): string;
+  displayName(): string;
+}
+// Student Class
+class StudentClass implements StudentFunctions{
+
+  constructor(private firstName: string, private lastName: string) {
   }
 
-  interface printTeacherFunction {
-    (firsName: string, lastName: string): string;
+  workOnHomeWork(): string {
+    return 'Currently working';
   }
 
-  
+  displayName(): string {
+    return this.firstName;
+  }
+}
