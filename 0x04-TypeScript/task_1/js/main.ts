@@ -30,3 +30,14 @@ const teacher3: Teacher = {
     numberOfReports: 17,
   };
   console.log(director1);
+
+  // print teacher function
+  function printTeacher(firsName: string, lastName: string): string {
+    return(`${firsName.charAt(0).toUpperCase()} . ${lastName.charAt(0).toUpperCase}${lastName.slice()}`);
+  }
+
+  interface printTeacherFunction {
+    (firsName: string, lastName: string): string;
+  }
+
+  
