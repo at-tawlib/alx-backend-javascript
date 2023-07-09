@@ -23,7 +23,7 @@ const student2: Student = {
 }
 
 //  create student array to hold students
-const studentArray = [student1, student2];
+const studentArray: Student[] = [student1, student2];
 
 // create table for each student in the array
 const table = document.getElementById('studentTable') as HTMLTableElement;
