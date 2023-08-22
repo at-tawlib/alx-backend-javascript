@@ -1,18 +1,17 @@
 const fs = require('fs');
 
 function countStudents(path) {
-
   const students = {}; // holds subjects and students taking them
-  const fields = {}; // to hold fields count 
+  const fields = {}; // to hold fields count
   let numberOfStudents = 0;
 
   try {
     const readFile = fs.readFileSync(path, 'utf-8');
     const rows = readFile.split('\n');
     // start from index of 1 to ignore the headings
-    for (let i = 1; i < rows.length; i++) {
+    for (let i = 1; i < rows.length; i += 1) {
       if (rows[i] !== '') {
-        numberOfStudents++;
+        numberOfStudents += 1;
         const row = rows[i].split(',');
         // if field is not in students, add it, else push it to object
         if (Object.prototype.hasOwnProperty.call(students, row[3])) {
