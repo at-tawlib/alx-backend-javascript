@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs')
+const fs = require('fs');
 
 function countStudents(path) {
   const students = {}; // holds subjects and students taking them
