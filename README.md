@@ -5,3 +5,4 @@
 - [0x03. ES6 data manipulation](0x03-ES6_data_manipulation) - `JavaScript - ES6`
 - [0x04. Typescript](0x04-TypeScript) - `JavaScript -  Typescript`
 - [0x05. NodeJS Basic](0x05-Node_JS_basic) - `Back-end - JavaScript - ES6 - NodeJS - ExpressJS`
+- [0x06. Unittests in JS](0x06-unittests_in_js) - `UnitTests -  Back-end - JavaScript - ES6 - NodeJS - ExpressJS - Mocha `
