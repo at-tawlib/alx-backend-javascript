@@ -100,8 +100,7 @@ Hello Holberton School!
 bob@dylan:~$ 
 ```
 
-### 5. Create a more complex HTTP server using Node's HTTP module
-File: [5-http.js](5-http.js)
+### [5. Create a more complex HTTP server using Node's HTTP module](5-http.js)
 
 In a file named  `5-http.js`, create a small HTTP server using the  `http`  module:
 -   HTTP server listens on port 1245
@@ -128,9 +127,8 @@ Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
 bob@dylan:~$ 
 ```
 
-### 6. Create a small HTTP server using Express
+### [6. Create a small HTTP server using Express](6-http_express.js)
 
-File:  [6-http_express.js](6-http_express.js)
 -   HTTP server should listen on port 1245
 -   Displays  `Hello Holberton School!`  in the page body for the endpoint  `/`
 
@@ -158,8 +156,7 @@ bob@dylan:~$ curl localhost:1245/any_endpoint && echo ""
 bob@dylan:~$ 
 ```
 
-### 7. Create a more complex HTTP server using Express
-File:  [7-http_express.js](7-http_express.js)
+### [7. Create a more complex HTTP server using Express](7-http_express.js)
 -   It should be assigned to the variable app and this one must be exported
 -   HTTP server should listen on port 1245
 -   It should return plain text
