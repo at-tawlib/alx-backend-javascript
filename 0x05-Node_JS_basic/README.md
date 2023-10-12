@@ -9,7 +9,7 @@ Hello NodeJS!
 bob@dylan:~$
 ```
 
-### [1. Using Process stdin]()1-stdin.js)
+### [1. Using Process stdin](1-stdin.js)
 
 program named  `1-stdin.js`  that will be executed through command line:
 -   It displays the message  `Welcome to Holberton School, what is your name?`  (followed by a new line)
@@ -30,8 +30,9 @@ This important software is now closing
 bob@dylan:~$ 
 ```
 
-### 2. Reading a file synchronously with Node JS
+### [2. Reading a file synchronously with Node JS](2-read_file.js)
 
+Using the database  [database.csv](database.csv)  (provided in project description)
  a function  `countStudents`  in the file  `2-read_file.js`
 -   The script  reads the database file synchronously
 -   If the database is not available, it should throw an error with the text  `Cannot load the database`
@@ -54,9 +55,9 @@ Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
 bob@dylan:~$ 
 ```
 
-### 3. Reading a file asynchronously with Node JS
+### [3. Reading a file asynchronously with Node JS](3-read_file_async.js)
 
-Using the database  `database.csv`  (provided in project description)
+Using the database  [database.csv](database.csv)  (provided in project description)
 -   Has a function named  `countStudents`. That accepts a path in argument (same as in  `2-read_file.js`)
 -   The script should attempt to read the database file asynchronously
 -   The function returns a Promise
